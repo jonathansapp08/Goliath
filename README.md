@@ -19,16 +19,16 @@ In Forza Horizon 5, rewards are given for completed races. The reward varies dep
 7. At the bottom of goliath.py enter your email, the app password you just received, and your number followed by your carrier
 
 Carrier information will be one of the following:
-**Att:** @mms.att.net
-**Tmobile:** @tmomail.net
-**Verizon:** @vtext.com
-**Sprint:** @messaging.sprintpcs.com
-**Virgin:** @vmobl.com
-**Boost:** @smsmyboostmobile.com
-**Cricket:** @sms.cricketwireless.net
-**Metro:** @mymetropcs.com
-**US Cellular:** @email.uscc.net
-**Xfinity:** @vtext.com
+- **Att:** @mms.att.net
+- **Tmobile:** @tmomail.net
+- **Verizon:** @vtext.com
+- **Sprint:** @messaging.sprintpcs.com
+- **Virgin:** @vmobl.com
+- **Boost:** @smsmyboostmobile.com
+- **Cricket:** @sms.cricketwireless.net
+- **Metro:** @mymetropcs.com
+- **US Cellular:** @email.uscc.net
+- **Xfinity:** @vtext.com
 
 *Consider using environment variables if you don't want to hard code this information*
 
