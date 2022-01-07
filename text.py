@@ -19,18 +19,7 @@ def send_text(email, pas, sms_gateway):
     # Now we need to login
     server.login(email,pas)
 
-    # Now we use the MIME module to structure our message.
-    msg = MIMEMultipart()
-    msg['From'] = email
-    msg['To'] = sms_gateway
-    # Make sure you add a new line in the subject
-    msg['Subject'] = "Something went wrong!\n"
-    # Make sure you also add new lines to your body
-    body = "Check your game\n"
-    # and then attach that body furthermore you can also send html content.
-    msg.attach(MIMEText(body, 'plain'))
-
-    sms = msg.as_string()
+    sms = "Check your game"
 
     server.sendmail(email,sms_gateway,sms)
 

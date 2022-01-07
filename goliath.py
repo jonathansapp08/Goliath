@@ -8,6 +8,10 @@ from easyocr import Reader
 import text
 
 def crop_time(img, height_crop, width_crop):
+    '''
+    Crop image to only look at time
+    '''
+
     width,height = pyautogui.size()
     width = int(width*width_crop)
     height = int(height*height_crop)
@@ -15,6 +19,10 @@ def crop_time(img, height_crop, width_crop):
     return cropped_image
 
 def crop_speed(img, height_crop, width_crop):
+    '''
+    Crop image to only look at speed
+    '''
+
     width,height = pyautogui.size()
     width_crop = int(width*width_crop)
     height_crop = int(height*height_crop)
@@ -89,6 +97,7 @@ reader = Reader(['en'])
 
 racing = True
 while(racing == True):
+    # Adjust if you need more/less time to start the race
     time.sleep(10)
 
     frame = pyautogui.screenshot("img/outcome.PNG")
@@ -106,5 +115,5 @@ while(racing == True):
     time.sleep(10)
 
 
-# Outside of loop send text
-text.send_text(email="email@gmail.com", pas="pass", sms_gateway='number@carrier')
+# ENTER INFORMATION FOR TEXTING TO WORK
+text.send_text(email="EMAIL@gmail.com", pas="PASSWORD", sms_gateway='PHONE_NUMBER@CARRIER')
